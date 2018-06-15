@@ -30,7 +30,7 @@ path "cf/{{ .OrgID }}" {
 }
 
 path "cf/{{ .OrgID }}/*" {
-  capabilities = ["read", "list"]
+  capabilities = ["create", "read", "update", "delete", "list"]
 }
 `
 )
